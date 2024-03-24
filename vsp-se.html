@@ -1,0 +1,88 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLAYER</title>
+  
+      <script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+      <script type="text/javascript">jwplayer.key = 'Khpp2dHxlBJHC8MCmLnBuV2jK/DwDnJMniwF6EO9HC/riJ712ZmbHg==';</script>
+      
+     <link rel="stylesheet" href="style.css">
+           
+</head>
+
+<body>
+  <div class="header"></div>
+  <div id="jwplayerDiv"></div>
+  
+  <a href=""> <button class="custom-button ref">REFRESH</button> </a>
+  
+   <button class="custom-button" onclick="DRM2()">CH FHD SE</button>
+   
+  
+    <script> 
+  var playerInstance = jwplayer("jwplayerDiv");
+
+    // Function to switch to DRM 
+    function DRM2() {
+      playerInstance.setup({
+        file: atob('aHR0cHM6Ly9jb3JzLXByb3h5LmNsdXN0ZXIuZnVuL2h0dHBzOi8vZGlyZWN0b3Iuc3RyZWFtaW5nLnRlbGlhLmNvbS90dm0tcGFja2FnZXItcHJvZC9ncm91cDEvNjA4OTZjMzY0N2EyM2Q3ZjExNWNkNTdhL21hbmlmZXN0Lm1wZA=='),
+        type: "dash",
+        drm: {
+          "clearkey": {
+            "keyId": atob('ZWFiMTNlNjk3OTM3NTZlZGE3N2Q4ZDcxZmRhOTBkNWQ='),
+            "key": atob('Y2QwMjJlOWJmZmE2YTBkMTUyM2VlNWQ5ZmNkYTllZDQ=')
+          }
+        }
+      });
+    }
+    
+        </script>
+
+ <style>
+      html {
+            font-family: Poppins;
+            margin: 0;
+            padding: 0
+        }
+
+      .custom-button {
+        background-color: #273238;
+        font-size: 12px;
+        color: #fff;
+        padding: 6px 10px;
+        border: 2px solid #301934;
+        cursor: pointer;
+        margin-top: 4px;
+        margin-right: 1px;
+        border-radius: 16px;
+      }
+     
+      .custom-button:hover {
+        background-color: #3b444b;
+      } 
+      .ref {
+      background-color: #BA55D3;
+      border: 2px solid #BA55D3; 
+        }
+        
+     .ref:hover {
+          background-color: #BA55D3;
+        }
+        
+      .header {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        font-size: 24px;
+      } 
+     
+   
+ </style>
+ 
+</body>
+</html>
+
+
